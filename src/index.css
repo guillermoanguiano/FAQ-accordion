@@ -1,0 +1,192 @@
+/* 
+    The designs were created to the following widths:
+
+    - Mobile: 375px
+    - Desktop: 1440px
+
+    @media (min-width: 375px) {
+
+    }
+
+    @media (min-width: 1440px) {
+
+    }
+  
+*/
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --graylish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    height: 100vh; 
+}
+
+.mt {
+    margin-top: 1rem;
+}
+
+.mb {
+    margin-bottom: 2rem;
+}
+
+.container {
+    background-color: var(--light-pink);
+    background-image: url("./assets/images/background-pattern-mobile.svg") ;
+    background-position: top -15% center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  
+
+.heading {
+    display: flex;
+    gap: 2rem;
+    font-weight: 900;
+}
+
+.heading-text {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+}
+
+.list {
+}
+
+.list-item {
+
+}
+
+.item {
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 15px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.question-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.question-icon {
+
+}
+
+.answer {
+    margin: 0 auto;
+}
+
+.faq-contenedor {
+    margin-top: 2rem;
+    background-color: var(--white);
+    height: auto;
+    padding: 2rem;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%; /* Posicionar a la mitad del ancho del contenedor padre */
+    top: 40%; /* Posicionar a la mitad de la altura del contenedor padre */
+    transform: translate(-50%, -50%); /* Centrar horizontal y verticalmente */
+    box-shadow: 1rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 376px) {
+    .container {
+        background-position: top -25% center;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        background-image: url("./assets/images/background-pattern-desktop.svg");
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        background-position: top -10% center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        background-position: top -20% center;
+    }
+}
+
+@media (min-width: 300px) {
+    .faq-contenedor {
+        width: 85%;
+    }
+
+    .heading {
+        gap: 1rem;
+    }
+
+    .heading-text {
+        font-size: 2rem;
+    }
+
+    .mb {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 375px) {
+    .faq-contenedor {
+        width: 65%;
+    }
+}
+
+@media (min-width: 768px) {
+    .faq-contenedor {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .faq-contenedor {
+        width: 40%;
+    }
+
+    .heading {
+        gap: 2rem;
+    }
+
+    .heading-text {
+        font-size: 2.4rem;
+    }
+
+    .mb {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .faq-contenedor {
+        width: 30%;
+        top: 35%;
+    }
+}
+
+
+
