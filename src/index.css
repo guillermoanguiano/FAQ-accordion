@@ -87,6 +87,7 @@ body {
 
 .answer {
     margin: 0 auto;
+    color: var(--graylish-purple);
 }
 
 .faq-contenedor {
